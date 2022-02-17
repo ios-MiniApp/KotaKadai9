@@ -13,6 +13,7 @@
 		B93912D827BE33550068A25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93912D627BE33550068A25B /* Main.storyboard */; };
 		B93912DA27BE33560068A25B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93912D927BE33560068A25B /* Assets.xcassets */; };
 		B93912DD27BE33560068A25B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93912DB27BE33560068A25B /* LaunchScreen.storyboard */; };
+		B93912E527BE33BD0068A25B /* SelectPrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93912E427BE33BD0068A25B /* SelectPrefectureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B93912D927BE33560068A25B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93912DC27BE33560068A25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B93912DE27BE33560068A25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93912E427BE33BD0068A25B /* SelectPrefectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrefectureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B93912D027BE33550068A25B /* AppDelegate.swift */,
 				B93912D227BE33550068A25B /* SceneDelegate.swift */,
 				B93912D427BE33550068A25B /* ViewController.swift */,
+				B93912E427BE33BD0068A25B /* SelectPrefectureViewController.swift */,
 				B93912D627BE33550068A25B /* Main.storyboard */,
 				B93912D927BE33560068A25B /* Assets.xcassets */,
 				B93912DB27BE33560068A25B /* LaunchScreen.storyboard */,
@@ -77,6 +80,7 @@
 				B93912C927BE33550068A25B /* Sources */,
 				B93912CA27BE33550068A25B /* Frameworks */,
 				B93912CB27BE33550068A25B /* Resources */,
+				B979260D27BE522D0034B6B6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,6 +137,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B979260D27BE522D0034B6B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B93912C927BE33550068A25B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +165,7 @@
 				B93912D527BE33550068A25B /* ViewController.swift in Sources */,
 				B93912D127BE33550068A25B /* AppDelegate.swift in Sources */,
 				B93912D327BE33550068A25B /* SceneDelegate.swift in Sources */,
+				B93912E527BE33BD0068A25B /* SelectPrefectureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

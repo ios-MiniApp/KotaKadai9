@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak private var prefectureTextLabel: UILabel!
+
+    @IBAction func exitCancel(segue: UIStoryboardSegue) {
     }
 
+    @IBAction func exitSelect(segue: UIStoryboardSegue) {
+        guard let nextVC = segue.source as? SelectPrefectureViewController else {
+            return
+        }
+        prefectureTextLabel.text = nextVC.prefectureString
+    }
 
 }
-
