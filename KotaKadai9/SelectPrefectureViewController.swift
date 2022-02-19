@@ -9,7 +9,7 @@ import UIKit
 
 class SelectPrefectureViewController: UIViewController {
 
-    var prefectureString: String?
+    private(set) var prefectureString: String?
 
     @IBAction private func didTapTokyoButton(_ sender: Any) {
         prefectureString = "東京都"
